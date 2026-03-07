@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Alunos</title>
+</head>
+<body>
+    
+    <h1>Lista de Alunos</h1>
+
+    <!-- Borda da tabela -->
+    <table border="3">
+
+    <!-- Título da tabela-->
+    <caption>Alunos do Curso</caption>
+    
+    <!-- Cabeçalho da tabela-->
+    <thead>
+    <th>Curso</th>    
+    </thead>
+    
+    <tr>
+    <th>Nome</th>
+    <th>Idade</th>
+    <th>Curso</th>
+    </tr>
+
+    <tr>
+    <td>Marina</td>
+    <td>18</td>
+    <td>Desenvolvimento de Sistemas</td>
+    </tr>
+
+    <tr>
+    <td>Carlos</td>
+    <td>19</td>
+    <td>Desenvolvimento de Sistemas</td>
+    </tr>
+    
+    <tr>
+    <td>Luísa</td>
+    <td>17</td>
+    <td>Desenvolvimento de Sistemas</td>
+    </tr>
+    
+    </table>
+    
+    <br><br>
+    <hr>
+    <br>
+    
+    
+    <form>
+    <label for="nome">Nome</label>
+    <input type="text" id="nome" required>
+    
+    <br><br>
+    <label for="email">Email</label>
+    <input type="email" id="email" required>
+
+    <br><br>
+    <label for="idade">Idade</label>
+    <input type="number" id="idade" required>
+
+    <!-- Criação de opções interativas -->
+    <br><br>
+    
+    <label for="curso">Curso</label>
+    
+    <select id="curso">
+    <option>Desenvolvimento de Sistemas</option>
+    <option>Administração</option>
+    <option>Informática</option>
+    </select>
+
+    <br><br>
+
+    <!-- Botão para enviar -->
+    <button>Enviar</button>
+
+    </form>
+
+</body>
+</html>
