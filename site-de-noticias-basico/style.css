@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  background: linear-gradient(
+    135deg,
+    #0a1f44 0%,   /* azul institucional escuro */
+    #102a5c 50%,  /* azul intermediário */
+    #f5f7fa 100%  /* branco suave */
+  );
+  margin: 0;
+}
+
+/* Container principal */
+.container-pai {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  width: 100%;
+  background-color: #020f26; /* azul ETEC */
+  text-align: center;
+  color: white;
+  padding: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  border-bottom: 3px solid #ffffff;
+}
+
+/* Cards */
+.card-noticia,
+.card-noticia2,
+.card-noticia3,
+.card-noticia4 {
+  position: relative;
+  width: 100%;
+  background-color: #ffffff; /* branco limpo */
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Botão */
+button {
+  background-color: #0a1f44;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 15px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #163a7a; /* azul mais claro */
+}
+
+/* Imagem */
+.capa {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+/* Efeito hover */
+.card-noticia:hover .capa,
+.card-noticia2:hover .capa,
+.card-noticia3:hover .capa,
+.card-noticia4:hover .capa {
+  opacity: 0.4;
+}
+
+.card-noticia:hover .conteudo,
+.card-noticia2:hover .conteudo,
+.card-noticia3:hover .conteudo,
+.card-noticia4:hover .conteudo {
+  opacity: 1;
+}
+
+/* Conteúdo */
+.conteudo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: rgba(10, 31, 68, 0.9); /* azul escuro transparente */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+/* Grid */
+.grid_template {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.conteudo h1 {
+  font-size: x-large;
+}
